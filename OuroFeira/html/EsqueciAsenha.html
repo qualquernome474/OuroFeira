@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esqueci a Senha</title>
+    <link rel="stylesheet" href="../css/Style.css">
+    <script src="../javascript/script.js"></script>
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <script>
+        function sendMail() {
+            (function () {
+                emailjs.init("Y5aAUD4d8hTbiz9Ae"); // Account Public sey 100;
+            })();
+
+
+            var codigo = Math.floor(10000 + Math.random() * 90000);
+
+            //parâmetros do serviço de envio de email
+            const templateParams = {
+                emailuser: document.querySelector("#email").value,
+                codigo: codigo,
+
+            };
+
+
+
+            var serviceID = "service_1cg80f7";
+            var templateID = "template_nyvts2b";
+            //configuração dos serviços 
+            emailjs.send(serviceID, templateID, templateParams)
+                .then(res => {
+                    alert("deu certo");
+                })
+                .catch(err => {
+                    console.error("Erro ao enviar email:", err);
+                });
+
+            $.ajax({
+                url: "../Php/SALVACODIGO.php",
+                method: "POST",
+                data: {
+                    email: document.querySelector("#email").value,
+                    codigo: codigo
+                },
+                success: function (response) {
+                    console.log(response); // Exibe a resposta do PHP
+                },
+                error: function (xhr, status, error) {
+                    console.error(error); // Exibe o erro
+                }
+            });
+
+		window.location.href = "../html/recebecodigo.html";
+
+        }
+    </script>
+
+
+</head>
+
+<body>
+    <div class="barralogoResp">
+        <div class="barralogo ">
+            <h1 style="color: #FD914D;">Ouro feira</h1>
+        </div>
+    </div>
+
+    <div>
+        <div class="logotam">
+            <div class="logocanto ">
+                <a href="login.html">
+                    <img src="../Imagems/logo.png" alt="" height="125" width="">
+                </a>
+            </div>
+        </div>
+
+        <div class="quadradotrocasenha">
+
+            <div class="h4ESQUECIasenha">
+                <h4>Esqueci minha senha</h4>
+            </div>
+
+            <div class="linha1">
+                <p>Iremos mandar um código de seis dígitos para o email cadastrado informado.</p>
+            </div>
+
+            <div class="labelESQUECIasenha">
+                <label for="inputField">email:</label>
+	    </div>
+                <div class="inputESQUECIasenha">
+                    <input type="text" id="email" name="email"><br>
+                </div>
+
+            
+            <br>
+            <div class="centerbtnverfESQUECI">
+                <button onclick="sendMail()" type="submit">Enviar Código</button><br><br>
+            </div>
+
+
+
+        </div>
+
+</body>
+
+</html>

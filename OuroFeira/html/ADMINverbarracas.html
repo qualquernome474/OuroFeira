@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                       <link rel="stylesheet"
+                  
+        <link rel="stylesheet" href="../css/Style.css">
+    <script src="../javascript/script.js"></script>
+
+
+
+    <script text="text/javascript">
+        $(document).ready(function() { //executa assim que carrega a página
+            //define as variáveis com a página atua
+            var pagina = 1; // define a página atual
+            var qtd_result_pg = 10; //define a quantidade de páginas por página
+
+            listar_registros(pagina, qtd_result_pg); //chama a função listar_registros
+
+            //chama a função assim que carrega a página
+            $("#form-pesquisa").submit(function(evento) {
+                evento.preventDefault();
+                listar_registros(pagina, qtd_result_pg); //chama a função listar_registros
+            });
+        });
+
+        //define a função listar_registross()
+        function listar_registros(pagina, qtd_result_pg) {
+
+            const url = new URL(window.location.href);
+
+
+            const cpf = url.searchParams.get('cpf');
+
+            
+            var pesquisa = $("#pesquisa").val();
+            var dados = { //define o objeto com os dados a serem enviados
+                pesquisa: pesquisa,
+                pagina: pagina,
+                qtd_result_pg: qtd_result_pg,
+                cpf:cpf
+            }
+
+            $.post('../Php/ACESSARBARRACA.php?cpf='+cpf, dados, function(retorna) { //envia os dados via post
+                $(".resultados").html(retorna); //define onde o resultado será exibido
+            });
+        }
+
+        
+        </script>
+
+
+
+</head>
+<body>
+
+              	<div class="centerOUROfeiraADMINverbarracas">
+                	<h1>Dados Da Barraca</h1>
+        	</div>
+        
+
+        <div class="logocanto">
+            <a href="../html/verfeirantes.html">
+                <img src="../Imagems/logo.png" alt="" height="125" width="">
+            </a>
+        </div>
+    
+   
+
+
+    <form id="form-pesquisa" action="" method="post">	
+ <div class="centarlizaPesqiusa">
+    <div class="search-container">
+	    	    
+    </div>
+</div>
+</form>
+        <div class="resultados">
+            <!--Os dados da busca efetuada pelo aquivo buscarPessoa.php, serão exibidos aqui-->
+        </div>
+    
+</body>
+</html>

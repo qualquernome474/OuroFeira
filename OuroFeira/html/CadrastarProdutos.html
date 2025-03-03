@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/Style.css">
+    <script src="../javascript/script.js"></script>
+
+    <title>Tela Inicial</title>
+</head>
+<body>
+ 
+    <div class="barralogoResp">
+        <div class="barralogo ">
+            <h1 style="color: #FD914D;">Ouro feira</h1>
+        </div>
+      
+        <div class="logocanto">
+            <a href="../html/telaFeirante.html">
+            <img  src="../Imagems/logo.png" alt="" height="125" width="">
+        </a>
+        </div>
+    </div>
+
+    <div class="ajustacardPDRcad">
+    <div class="card">
+        <img src="../Imagems/comida_1.png" alt="Card Image" class="card-img2">
+        <div class="card-content">
+            <h2 class="card-title">Nome do produto</h2>
+            <div class="descricaoPRODUTO">
+                <p class="card-description1">Descris o </p>
+            </div>
+        </div>
+    
+
+    <div class="quadradocadPDR">
+
+        <div class="StylecadrastoPdr">
+            <h1>Cadrasto de Produtos</h1>
+        </div>
+
+        
+
+        
+        <form action="../Php/CADRASTOPROD.php" enctype="multipart/form-data" method="POST">
+            <div class="form-groupCADpdr">
+                <label for="">Nome:</label>
+                <input type="text" id="nome" name="nome"><br>
+            </div>
+
+            <div class="form-groupCADpdr">
+                <label for="">Preço:</label>
+                <input type="text" id="preco" name="preco"><br>
+            </div>
+
+            <div class="form-groupCADpdr">
+                <label for="">Peso:</label>
+                <input type="text" id="peso" name="peso"><br>
+            </div>
+
+
+                <div class="form-groupCADpdr">
+    <label for="CategoriasProdutos">Categoria:</label>
+    <select id="CategoriasProdutos" name="CategoriasProdutos">
+        <optgroup label="Bebidas">
+            <option value="Bebidas Geladas">Bebidas Geladas</option>
+            <option value="Bebidas Quentes">Bebidas Quentes</option>
+            <option value="Bebidas Naturais">Bebidas Naturais</option>
+        </optgroup>
+
+        <optgroup label="Comidas">
+            <option value="Comidas Congeladas">Comidas Congeladas</option>
+            <option value="Comidas Quentes">Comidas Quentes</option>
+            <option value="Comidas Feitas na hora">Comidas feitas na hora</option>
+        </optgroup>
+
+        <optgroup label="Artesanatos">
+            <option value="Artesanato de Barro">Feitos de Barro</option>
+            <option value="Artesanato de Metal">Feitos de Metais</option>
+            <option value="Artesanato de Plastico">Feitos de pl�sticos</option>
+        </optgroup>
+    </select>
+    <br>
+</div>
+
+                <div class="form-groupCADpdr">
+                    <label for="">Validade: </label>
+                    <input type="date" name="validade" id="validade"><br>
+                </div>
+        
+                <div class="form-groupCADpdr">
+                    <label for="">Quantidade:</label>
+                    <input type="text" id="quantidade" name="quantidade"><br>
+                </div>
+
+                <div class="form-groupCADpdr">
+                    <label for="">Descrição:</label>
+                    <input type="text" id="descricao" name="descricao"><br>
+                </div>
+
+                <div class="form-groupCADpdr">
+                    <p><label for="">selecionar foto</label>
+                     <input name="arquivos" type="file"></p>
+                 </div>
+                     
+            <br>
+            
+            <div class="centerbtnCADpdr">
+
+                <button type="submit">Cadrastrar Produto</button>
+		        
+
+
+            </div>
+        </div>
+        
+        
+        </form>
+
+    
+       
+
+        
+        
+    </body>
+</html>

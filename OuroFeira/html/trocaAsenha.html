@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Troca a senha</title>
+    <link rel="stylesheet" href="../css/Style.css">
+    <script src="../javascript/script.js"></script>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <script>
+        function trocasenha() {
+            var url = window.location.href;
+            const parsedUrl = new URL(url);
+
+            const codigo = parsedUrl.searchParams.get('codigo');
+
+
+            $.ajax({
+                url: "../Php/MUDASENHA.php",
+                method: "POST",
+                data: {
+                    senha: document.querySelector("#senhanova").value,
+                    codigo: codigo
+                },
+                success: function (response) {
+                    console.log(response); // Exibe a resposta do PHP
+                },
+                error: function (xhr, status, error) {
+                    console.error(error); // Exibe o erro
+                }
+            });
+
+	window.location.href = "../html/login.html";
+        }
+    </script>
+
+
+
+
+
+
+
+
+</head>
+
+
+<body>
+    <div class="barralogoResp">
+        <div class="barralogo ">
+            <h1 style="color: #FD914D;">Ouro feira</h1>
+
+        </div>
+    </div>
+
+
+    <div>
+        <div class="logotam">
+            <div class="logocanto ">
+                <a href="html/login.html">
+                    <img src="Imagems/logo.png" alt="" height="125" width="">
+                </a>
+            </div>
+        </div>
+
+        <div class="quadradotrocasenha">
+
+
+
+            <div class="form-group">
+                <div class="labelTrcaSenha">
+                    <label for="inputField">Nova senha:</label>
+                </div>
+
+                <input type="text" id="senhanova" name="senhanova"><br>
+
+
+                <div class="labelTrcaSenha">
+                    <label for="inputField">Rescreva </label>
+                </div>
+                <input type="text" id="Rsenhanova" name="Rsenhanova">
+
+            </div>
+            <br>
+            <div class="centerbtn">
+                <button onclick="trocasenha()" type="submit">Salvar</button><br><br>
+            </div>
+
+
+</body>
+
+</html>

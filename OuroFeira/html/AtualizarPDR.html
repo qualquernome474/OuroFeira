@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/Style.css">
+    <script src="../javascript/script.js"></script>
+
+    <title>Atualiza Produtos</title>
+
+<center><h1>Ouro feira</h1></center>
+    <div class="logocanto">
+        <a href="../html/telaFeirante.html">
+            <img src="../Imagems/logo.png" alt="Logo Ouro Feira" height="125">
+        </a>
+    </div>
+
+<center>
+    <form id="form-pesquisa" method="post">
+        <input type="text" id="pesquisa" name="pesquisa" placeholder="Digite sua pesquisa...">
+        <button type="submit">Pesquisar</button>
+    </form>
+</center>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var pagina = 1;
+            var qtd_result_pg = 10;
+            listar_registros(pagina, qtd_result_pg);
+
+            // Função de envio do formulário de pesquisa sem recarregar a página
+            $("#form-pesquisa").submit(function(evento) {
+                evento.preventDefault();
+                listar_registros(pagina, qtd_result_pg);
+            });
+        });
+
+        // Função para listar os registros (pesquisa)
+        function listar_registros(pagina, qtd_result_pg) {
+            var pesquisa = $("#pesquisa").val();
+            var dados = {
+                pesquisa: pesquisa,
+                pagina: pagina,
+                qtd_result_pg: qtd_result_pg
+            };
+
+            $.post('../Php/BUSCAPRODUTOSTAB.php', dados, function(retorna) {
+                $(".resultados").html(retorna);
+            });
+        }
+
+        // Função para confirmação de exclusão
+        function confirmarExclusao(id, nm) {
+            if (window.confirm("Deseja realmente apagar o registro:\n" + id + " - " + nm)) {
+                window.location = "../Php/EXCLUIRPESSOA.php?cpf=" + id;
+            }
+        }
+    </script>
+</head>
+<body>
+
+    
+    <div class="resultados">
+        <!-- Os dados da busca serão exibidos aqui -->
+    </div>
+
+</body>
+</html>

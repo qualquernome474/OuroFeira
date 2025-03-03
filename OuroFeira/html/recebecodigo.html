@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esqueci a Senha</title>
+    <link rel="stylesheet" href="../css/Style.css">
+    <script src="../javascript/script.js"></script>
+</head>
+
+<body>
+    <div class="barralogoResp">
+        <div class="barralogo ">
+            <h1 style="color: #FD914D;">Ouro feira</h1>
+        </div>
+    </div>
+
+    <div>
+        <div class="logotam">
+            <div class="logocanto ">
+                <a href="../html/login.html">
+                    <img src="../Imagems/logo.png" alt="" height="125" width="">
+                </a>
+            </div>
+        </div>
+
+        <div class="quadradotrocasenha">
+
+            <div class="Styleverificaçao">
+                <h4>Esqueci minha senha</h4>
+            </div>
+
+            <div class="linha1">
+                <p>Digite o código enviado.</p>
+            </div>
+            <form action="../Php/CONSULTASENHA.php" method="POST">
+                <div class="form-group">
+                    <label for="inputField">Informe o código:</label>
+
+                    <div class="inputcadrastar">
+                        <input type="text" id="codigo" name="codigo"><br>
+                    </div>
+
+                </div>
+                <br>
+                <div class="centerbtnverf">
+                    <button type="submit">Enviar Código</button><br><br>
+                </div>
+
+
+            </form>
+        </div>
+
+</body>
+
+</html>

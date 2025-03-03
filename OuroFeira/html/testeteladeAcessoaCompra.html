@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/Style.css">
+
+    <script src="../javascript/script.js"></script>
+    
+    <title>Barracas</title>
+</head>
+<body>
+    <div class=" ">
+        <h1 style="color: #FD914D;">Ouro feira</h1>
+    </div>
+
+    <div>
+        <div class="logocanto">
+           
+                <img src="../Imagems/logo.png" alt="" height="125" width="">
+            
+        </div>
+    </div>
+
+    <div class="btnCanto2">
+        
+        <button onclick="window.location.href='../Php/CARRINHO.php';" >Carrinho</button>
+        <button onclick="window.location.href='../Php/PERFIL.php';" >Perfil</button>
+
+<form action="../Php/CARRINHO.php" method="POST">
+
+		<button type="submit" name="logout">Sair</button>
+
+	
+		</form>
+
+    </div>
+    
+		
+    
+
+    <div class="centarlizaPesqiusa">
+    <div class="search-container">
+            <input style="background-color:#494949 ;color:  #FD914D;" type="text" name="query" placeholder="Digite sua pesquisa..">
+            <button type="submit" class="card-button">Pesquisar</button>
+    </div>
+</div>
+
+	</br>
+
+<div class="container">
+    <div class="centralizacard">
+    <div class="Espasamento-Cards">
+     
+
+        <div id="cards-container">
+            <!-- Os cards serão carregados aqui -->
+        </div>
+    </div>
+</div>
+</div>
+        <script>
+            // Carregar os dados do PHP
+            document.addEventListener("DOMContentLoaded", function () {
+                fetch("../Php/BUSCABARRACAS.php")
+                    .then(response => response.text())
+                    .then(data => {
+                        document.getElementById("cards-container").innerHTML = data;
+                    })
+                    .catch(error => {
+                        console.error("Erro ao carregar os dados:", error);
+                    });
+            });
+        </script>
+
+
+
+    
+
+
+</body>
+</html>
