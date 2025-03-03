@@ -1,0 +1,1348 @@
+
+
+/* Estilo básico para o pop-up */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none; /* Inicialmente escondido */
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.popup-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 600px;
+position: absolute;
+top: -8%; /* Distância do topo */
+left: -20%; /* Distância da esquerda */
+transform: none; 
+}
+
+.popup-content form {
+  display: inline;
+  flex-direction: column;
+  gap: 15px;
+}
+
+
+.popup-content label {
+  margin-bottom: 5px;
+  font-family:'Chewy', cursive;
+  font-size: 100%;
+  display: inline-block;
+}
+.popup-content select,
+.popup-content input[type="date"],
+.popup-content button {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+
+}
+
+.popup-content button {
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+.popup-content button:hover {
+  background-color: #555;
+}
+
+.close-popup {
+  background: #ff4d4d;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.close-popup:hover {
+  background: #d93636;
+}
+
+/*cor de fundo das paginas*/
+body {
+background: linear-gradient(90deg, #0097b2, #7ed957);
+font-family:'Chewy', cursive; 
+line-height: 1.6;
+
+}
+
+header {
+padding: 50px;
+text-align: center;
+position: sticky;
+top: 0;
+z-index: 10;
+}
+.centerourofeiraPRODUT{
+position: absolute;
+margin-top:-5%;
+text-align: center;
+left: 45%;
+font-size: 46.4 px;
+font-family: 'Chewy', cursive;
+}
+section {
+padding: 40px 20px;
+text-align: center;
+}
+
+.conteneriformFeirante{
+height: 100%;
+padding: 65px 75px;
+
+}
+.filtrosVENDASphp{
+display:inline;
+}
+.container{
+display:flex;
+padding: 55px;
+}
+.afastaCpfninformado{
+display:flex;
+margin-top:5%;
+}
+.Nomedabarraca{
+display:flex;
+margin-left: 20%;
+margin-top: -18%;
+}
+.DESCRICAOdabarraca{
+display: flex;
+margin-left:20%;
+margin-top: 0%;
+}
+.contertotal {
+display: flex;
+height: 100%;
+width: 100%;
+}
+
+.centerOUROfeira {
+position: absolute;
+text-align: center;
+left: 45%;
+font-size: 46.4 px;
+font-family: 'Chewy', cursive;
+}
+
+.centerOUROfeiraADMINverbarracas {
+display:flex;
+text-align: center;
+left: 16%;
+}
+
+.h1ADMIN {
+display: flex;
+margin-top: 3%;
+}
+
+.centerOUROfeiraFEIRANTE {
+position: absolute;
+text-align: center;
+left: 46%;
+font-size: 46.4 px;
+font-family: 'Chewy', cursive;
+margin-top: 0%;
+
+}
+
+.centerOUROfeiraADMIN {
+position: absolute;
+text-align: center;
+left: 46%;
+font-size: 46.4 px;
+font-family: 'Chewy', cursive;
+margin-top: -4%;
+}
+
+.centerOUROfeiraOINDEX {
+position: absolute;
+text-align: center;
+left: 45%;
+margin-top: -15%;
+font-size: 46.4 px;
+font-family: 'Chewy', cursive;
+}
+
+.alinhatextTITULO {
+text-align: center;
+margin-top: 5%;
+font-family: 'Chewy', cursive;
+font-size: 46.4 px;
+}
+
+.alinhatext {
+text-align: justify;
+font-family: 'Chewy', cursive;
+font-size: 23.4 px;
+padding: 0 80px;
+}
+
+
+.L1 {
+position: absolute;
+top: 0;
+right: 0;
+}
+
+/*Possis o da logo*/
+.logocanto {
+position: absolute;
+top: 8px;
+left: 16px;
+font-size: 18px;
+}
+
+/*Colocar algums 
+
+s no canto da tela*/
+.btnCanto {
+position: absolute;
+top: 2.5%;
+left: 88%;
+font-size: 18px;
+display: flex;
+flex-direction: column;
+gap: 8px;
+}
+
+.btnCanto2 {
+position: absolute;
+top: 5%;
+left:65%;
+font-size: 18px;
+display: flex;
+gap: 8px;
+}
+
+.btnCantologin {
+position: absolute;
+top: 7%;
+left: 86.5%;
+font-size: 18px;
+}
+
+.espacobtn {
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+
+.cardINTEGRANTES {
+width: 300px;
+border-radius: 10px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+overflow: hidden;
+background-color: white;
+margin: 20px;
+font-family: Arial, sans-serif;
+}
+
+.card-titleIntegrantes {
+font-size: 20px;
+margin: 0;
+}
+
+
+
+.card-imgINTEGRANTES {
+width: 100%;
+height: auto;
+
+}
+
+/*card do site*/
+.card {
+background-color: #474747;
+border-radius: 15px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+max-width: 350px;
+overflow: hidden;
+}
+
+
+/*Configura  o da imagem dos cards*/
+.card-img {
+width: 100%;
+height: auto;
+
+}
+
+/**/
+.card-content {
+padding: 80px;
+}
+
+/*configura  o do titulo do card*/
+.card-title {
+font-size: 16px;
+margin-bottom: 16px;
+color: #FD914D;
+align-items: center;
+
+}
+
+/*Descri  o do cards*/
+.card-description {
+font-size: 16px;
+color: #FD914D;
+margin-bottom: 15px;
+font-weight: bold;
+}
+
+.card-description1,
+.card-description2,
+.card-description3 {
+font-size: 16px;
+color: #FD914D;
+margin-bottom: 15px;
+font-weight: bold;
+}
+
+.card input[type="number"] {
+width: 80%;
+padding: 4px;
+border: 1px solid #ccc;
+border-radius: 15px;
+box-sizing: border-box;
+}
+
+/*Button do cards*/
+.card-button {
+background-color: #555;
+color: #FD914D;
+padding: 10px 20px;
+text-decoration: none;
+border-radius: 20px;
+transition: background-color 0.6s ease;
+border-color: #050505;
+
+}
+
+/*cor de fundo dos Button*/
+.card-button:hover {
+background-color: rgb(134, 236, 134);
+}
+
+/*Espasamento entre os cards*/
+.Espasamento-Cards {
+display: flex;
+gap: 20px;
+flex-wrap: wrap;
+max-width: 1800px;
+}
+
+.espasamentomarginIntergrantes {
+margin-top: 10%;
+}
+
+
+/*centralizando os cards no centro da tela*/
+.centralizacard {
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 10%;
+
+}
+
+.centralizabtnCard {
+display: flex;
+margin-left: 20%;
+color: #FD914D;
+margin-top: 15%;
+}
+
+
+/*usado para a loogo ter uma tamanho proporcional a tela*/
+.logotam {
+width: auto;
+height: auto;
+}
+
+.barralogoResp {
+width: auto;
+height: auto;
+
+}
+
+/*deixa a barra de pesquisa centralizada junto com o button*/
+.centarlizaPesqiusa {
+display: flex;
+justify-content: center;
+align-items: center;
+max-width: 91.5%;
+}
+
+/*Barra de pesquisa*/
+.search-container {
+max-width: 85px;
+margin: 2%;
+display: flex;
+text-decoration: none;
+transition: background-color 0.6s ease;
+}
+
+.search-container:hover {
+background-color: rgb(134, 236, 134);
+
+}
+
+.search-container input[type="text"] {
+flex: 1;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 4px 0 0 4px;
+font-size: 85%;
+margin-right: 10px;
+}
+
+.search-container button {
+padding: 10px;
+border: 1px solid #050505;
+border-radius: 5%;
+color: #FD914D;
+background-color: #555;
+font-size: 10px;
+cursor: pointer;
+font-size: 85%;
+}
+
+/*Configus de perfil tanta do usario quanto do feirante*/
+/*colocando os btn no cento da pagina*/
+.SelecionaPRD {
+display: flex;
+/*deixando o layout flex vel*/
+margin-top: 4%;
+/*distancia de espasamento da margem da (.barralogo) ate o button */
+align-items: center;
+/*alinhando os button*/
+flex-direction: column;
+/* deixando os button no esquema de coluna*/
+
+}
+
+/*configura  es de imagem para o usario*/
+/*centralizando a imagem de perfil*/
+.centPerfilclientes {
+display: flex;
+margin-left: 20%;
+margin-top: -18%;
+}
+
+.user-icon {
+width: 200px;
+height: 200px;
+border-radius: 50%;
+overflow: hidden;
+}
+
+.user-icon1 {
+display: flex;
+width: 200px;
+height: 200px;
+border-radius: 50%;
+overflow: hidden;
+margin-top:-2%;
+}
+
+
+.user-icon img {
+width: 100%;
+height: 100%;
+}
+
+/*centralizando os input e os label de perfil*/
+.centralizaPerfil {
+position: absolute;
+align-items: center;
+margin-left: 30%;
+margin-left: 10%;
+}
+
+.centralizantndaBarracaJose {
+display: flex;
+margin-left: 42%;
+gap: 1%;
+}
+
+label {
+font-size: 16px;
+margin-left: 35%;
+
+}
+
+input {
+font-size: 15px;
+}
+
+/*input e label do login*/
+label {
+font-size: 30px;
+margin-left: 32%;
+color: white;
+}
+
+h1 {
+color: white;
+font-family: 'chewy', cursive;
+}
+
+h4 {
+color: white;
+font-family:'chewy', cursive;
+font-size: 30px;
+
+}
+
+
+
+input {
+border-radius: 25px;
+/* Valor de borda arredondada */
+padding: 5px 10px;
+/* Espa amento interno */
+font-size: 14px;
+/* Tamanho da fonte */
+width: 300px;
+/* Largura do input */
+text-align: center;
+/* Centraliza o texto */
+background-color: #474747;
+color: rgb(65, 234, 65);
+}
+
+button {
+border-radius: 25px;
+font-family: 'chewy', cursive;
+padding: 6px 12px;
+width: 150px;
+background-color: #474747;
+color: white;
+font-size: 18px;
+transition: background-color 0.6s ease;
+text-decoration: none;
+cursor: pointer;
+}
+
+a {
+font-size: 19px;
+color: white;
+}
+
+button:hover {
+background-color: rgb(134, 236, 134);
+
+}
+
+.Stylelogin {
+font-size: 25px;
+margin-left: 33%;
+color: #FD914D;
+}
+
+.form-group {
+display: flex;
+flex-direction: column;
+/* Muda para 'row' para alinhamento horizontal */
+margin-top: 2%;
+}
+
+/*titulo do login*/
+.login {
+font-size: 16px;
+margin-left: 33%;
+align-items: center;
+}
+
+/*configura  es do nome da logo */
+.Ourofeira {
+font-size: 16px;
+margin-left: 49%;
+}
+
+.quadradologin {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background: #474747;
+padding: 80px;
+border-radius: 16px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.quadradotrocasenha {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background: #474747;
+padding: 80px;
+border-radius: 16px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.quadradotelainicial {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background: #474747;
+padding: 80px;
+border-radius: 16px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+margin-top: 2%;
+
+}
+
+.quadradocadPDR {
+position: absolute; /* Fixo em relação à viewport */
+top: calc(50% + 140px); /* Ajusta para ficar abaixo do header */
+left: 50%;
+transform: translate(-50%, -50%);
+background: #474747;
+padding: 50px;
+border-radius: 16px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/*configura  es do nome da logo */
+.centeresqueciasenha {
+display: flex;
+margin-left: 25%;
+margin-top: 5%;
+flex-direction: column;
+
+}
+
+.centralizabtnInicial {
+text-align: center;
+}
+
+.loginESQUECIASEN {
+display: flex;
+flex-direction: column;
+margin-left: 5%;
+}
+
+
+/*configura  es da tela de cadrasto das pesoas comun*/
+/*configura  es do titulo no centro da tela */
+.StyleCadrastar {
+display:flex;
+font-size: 15px;
+align-items: center;
+margin-top:-10%;
+}
+
+.centerbtn {
+display: flex;
+margin-left: 25%;
+margin-top: 2%;
+border-radius: 25px;
+gap: 3%;
+}
+
+.centerbtn1 {
+display: flex;
+margin-left: 27%;
+margin-top: 2%;
+border-radius: 25px;
+}
+
+.centerbtn4 {
+display: flex;
+margin-left: 5%;
+margin-top: 2%;
+border-radius: 25px;
+gap: 3%;
+}
+
+.centerbtn5 {
+display: flex;
+margin-left: 27%;
+margin-top: 4%;
+border-radius: 25px;
+
+}
+
+.quadradocadrastarFEIRANTE {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background: #474747;
+padding: 60px;
+border-radius: 16px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+margin-top: 5%;
+}
+
+.quadradocadrastar {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background: #474747;
+padding: 100px;
+border-radius: 16px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+margin-top: 9%;
+}
+
+.quadradoperfil {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background: #474747;
+padding: 80px;
+border-radius: 16px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+margin-top: 5%;
+
+}
+
+.quadradotrocarCARGO {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background: #474747;
+padding: 80px;
+border-radius: 16px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+margin-top: 10;
+
+}
+
+.alinhainputelabelFEIRANTE {
+display: inline;
+}
+
+/*configura  es do style de EsqueciAsenha.html */
+.Styleverifica ao {
+font-size: 25px;
+margin-left: 22%;
+color: #FD914D;
+}
+
+.centerbtnverf {
+display: flex;
+margin-left: 32%;
+margin-top: 5%;
+border-radius: 25px;
+}
+
+.centerbtnverfESQUECI {
+display: flex;
+margin-left: 38%;
+margin-top: 5%;
+border-radius: 25px;
+}
+
+.inputcadrastar {
+display: flex;
+margin-left: 20%;
+margin-top: 5%;
+border-radius: 25px;
+}
+
+.inputESQUECIasenha {
+display: flex;
+margin-left: 30%;
+border-radius: 25px;
+}
+
+.h4ESQUECIasenha {
+margin-left: 30%;
+}
+
+.labelESQUECIasenha {
+margin-left: 10%;
+}
+
+/*configura  es do style de verifica  o de tracaAsenha.html */
+.labelTrcaSenha {
+margin-right: 15%;
+
+}
+
+/*Css da barracas do feirante*/
+.imagemFeirante {
+display: flex;
+margin-top:-2%;
+}
+
+.NomedoFeirante {
+display: flex;
+margin-left: 2%;
+color: #FD914D;
+}
+
+.DescricaoFeirante {
+flex: 1;
+/* Faz com que as divs ocupem o espa o dispon vel */
+margin: 10px;
+padding: 20px;
+margin-right: 6%;
+}
+
+.descricaoPRODUTO {
+display: flex;
+font-size: 20px;
+color: #FD914D;
+text-align: center;
+
+}
+
+.quantidadeCard {
+display: flex;
+margin-left: 10%;
+color: #FD914D;
+}
+
+.alinhaquant {
+position: absolute;
+margin-left: 7%;
+
+}
+
+.ComidaBarraca,
+.BebidaBarraca {
+text-align: center;
+color: #FD914D;
+}
+
+.zArtesanatoBarraca {
+text-align: center;
+color: #FD914D;
+}
+
+
+.linha1 {
+
+color: white;
+font-weight: bold;
+font-size: 25px;
+}
+
+.titulopag {
+
+text-align: center;
+color: #FD914D;
+}
+
+.qrcode {
+
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+
+.topleft img {
+border-radius: 50%;
+/* Faz a imagem redonda */
+object-fit: cover;
+/* Ajusta a imagem para preencher o contï¿½iner */
+height: 150px;
+width: 150px;
+
+
+}
+
+.topleft {
+position: absolute;
+top: 35%;
+left: 2%;
+}
+
+.menuitens {
+position: absolute;
+margin-top: 1%;
+left: 25%;
+padding: 5px;
+}
+
+.texto1 {
+position: relative;
+margin-top: 3%;
+left: 25%;
+}
+
+#galeria {
+display: flex;
+flex-wrap: wrap;
+/* Permite que os itens se movam para a linha seguinte se nï¿½o houver espaï¿½o suficiente */
+margin-top: 10%;
+margin-left: 25%;
+}
+
+.imagem-container {
+display: flex;
+/* Alinha a imagem e a descriï¿½ï¿½o em linha */
+align-items: flex-start;
+/* Alinha a imagem ao topo do contï¿½iner */
+margin-bottom: 20px;
+/* Espaï¿½amento inferior entre os itens */
+border: 3px solid #656565;
+/* Borda ao redor do contï¿½iner */
+padding: 10px;
+/* Espaï¿½amento interno do contï¿½iner */
+background-color: #474747;
+/* Cor de fundo para o contï¿½iner */
+
+}
+
+.imagem-container img {
+margin-right: 20px;
+/* Espaï¿½amento entre a imagem e a descriï¿½ï¿½o */
+max-width: 200px;
+/* Limita a largura mï¿½xima da imagem */
+height: auto;
+/* Mantï¿½m a proporï¿½ï¿½o da imagem */
+
+
+}
+
+.descricao-imagem {
+font-size: 16px;
+/* Ajusta o tamanho da fonte */
+color: #FD914D;
+/* Cor do texto */
+font-weight: bold;
+line-height: 1.5;
+/* Espaï¿½amento entre linhas */
+
+}
+
+.botao {
+position: relative;
+margin-top: 2%;
+left: 25%;
+padding: 10px;
+}
+
+.FormularioCadastroProdutos {
+margin-top: 1%;
+font-size: 20px;
+left: 50%;
+
+}
+
+/* Centraliza os bot es horizontalmente */
+.centralizar-botoes {
+text-align: center;
+}
+
+.botaoformcadsprodut {
+display: inline-block;
+/* Faz com que os bot es fiquem lado a lado */
+font-size: 20px;
+margin: 1% 10px;
+/* Espa amento entre os bot es */
+padding: 10px 20px;
+/* Ajusta o tamanho dos bot es */
+}
+
+
+.logocanto {
+position: absolute;
+top: 8px;
+left: 16px;
+font-size: 18px;
+}
+
+.nomeOUROFEIRA {
+display: absolute;
+text-align: center;
+
+}
+
+
+
+.FormularioCadastroProdutos input {
+font-size: 15px;
+font-weight: bold;
+padding: 5px;
+
+
+}
+
+.FormularioCadastroProdutos select {
+padding: 10px;
+
+}
+
+.FormularioCadastroProdutos label {
+font-size: 25px;
+font-weight: bold;
+color: #FD914D;
+
+}
+
+.FormularioCadastroProdutos input[class="botaoformcadsprodut"] {
+margin-top: 1%;
+margin-left: 10px;
+padding: 10px;
+}
+
+.centralizacard {
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 10%;
+gap: 2%;
+}
+
+.Espasamento-Cards2 {
+display: flex;
+gap: 10px;
+flex-wrap: wrap;
+max-width: 1800px;
+margin-top: -50%;
+}
+
+.Espasamento-Cards {
+display: flex;
+gap: 10px;
+flex-wrap: wrap;
+max-width: 1800px;
+margin-top: -5%;
+}
+
+
+.card {
+background-color: #474747;
+border-radius: 15px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+max-width: 350px;
+overflow: hidden;
+}
+
+.card-img2 {
+width: 100%;
+height: auto;
+border-radius: 15px;
+}
+
+.centerBTNaDMIN {
+flex-direction: column;
+display: flex;
+margin-top: 5%;
+align-items: center;
+
+}
+
+
+/*configs tables*/
+.minha-tabela {
+width: 80%;
+/* Largura total da tabela */
+/* Remove espa os entre c lulas */
+}
+
+
+.minha-tabela td {
+border: 1px solid #dddddd;
+/* Borda das c lulas */
+text-align: center;
+/* Alinhamento do texto */
+padding: 8px;
+/* Espa amento interno */
+}
+
+.minha-tabela th {
+background-color: #f2f2f2;
+/* Cor de fundo do cabe alho */
+}
+
+.minha-tabela tr:nth-child(even) {
+background-color: #f9f9f9;
+/* Cor de fundo para linhas pares */
+}
+
+.minha-tabela tr:hover {
+background-color: #f1f1f1;
+/* Cor de fundo ao passar o mouse */
+}
+
+.minha-tabela td {
+font-family: Arial, sans-serif;
+/* Fonte das c lulas */
+}
+
+.tabelafeirante {
+display: flex;
+margin-top: 2%;
+margin-left: 10%;
+align-items: center;
+}
+
+.tabelaVERfeirante {
+display: flex;
+margin-top: -2%;
+margin-left: 10%;
+align-items: center;
+}
+
+.StylecadrastoPdr {
+font-size: 15px;
+margin-left: 10%;
+margin-top: 0%;
+color: #FD914D;
+
+}
+
+.form-groupCADpdr {
+display: block;
+grid-template-columns: 250px 1fr;/* Define colunas para label e input */
+/* Alinha o label e o input verticalmente */
+gap: 5px;/* Espa amento entre o label e o input */
+
+}
+
+.centerbtnCADpdr {
+display: flex;
+margin-left: 30%;
+margin-top: 2%;
+border-radius: 25px;
+gap: 5%;
+
+}
+
+label {
+display: inline-block;
+width: 150px;
+/* Largura do label para alinhamento */
+text-align: 350px;
+/* Alinha o texto do label   direita */
+margin-right: 150px;
+/* Espa o entre o label e o input */
+}
+
+input {
+display: inline-block;
+width: 250px;
+/* Define a largura do input */
+}
+
+p {
+font-family: 'chewy', cursive;
+font-size: 23.4px;
+}
+
+.centralizaimgPDR {
+display: flex;
+justify-content: left;
+align-items: center;
+margin-top: -30%;
+margin-left: -28%;
+}
+
+.alinhavendas {
+display: flex;
+align-items: center;
+margin-top: 0%;
+margin-left: 44%;
+}
+
+.centerbtnsPDR {
+display: flex;
+gap: 1%;
+align-items: center;
+justify-content: center;
+margin-top: 45%;
+}
+
+.form-groupCADfeirante {
+display: grid;
+grid-template-columns: 350px 1fr;
+/* Define colunas para label e input */
+align-items: center;
+/* Alinha o label e o input verticalmente */
+gap: 10px;
+/* Espa amento entre o label e o input */
+}
+
+.form-groupCADcategoria {
+display: grid;
+grid-template-columns: 350px 1fr;
+/* Define colunas para label e input */
+align-items: center;
+/* Alinha o label e o input verticalmente */
+gap: 5px;
+/* Espa amento entre o label e o input */
+}
+
+.alinhanome {
+display: inline;
+}
+
+.form-group1 {
+display: flex;
+flex-direction: column;
+}
+
+.margininputcad {
+display: flex;
+margin-left: 10%;
+}
+
+.alinhatextlabel {
+display: inline;
+}
+
+.centerbtnfeirante {
+display: flex;
+justify-content: center;
+}
+
+.ajustacardPDRcad {
+display: flex;
+margin-top: 5%;
+margin-left: 8%;
+background-color: #e37e32;
+}
+
+.card {
+
+border-radius: 8px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+width: 250px;
+/* Largura fixa para os cards */
+padding: 16px;
+box-sizing: border-box; 
+}
+.controlecard{
+width: 100%;
+height: 100%;
+display: grid;
+flex-direction: column;
+
+}
+.tabelafeirante2 {
+display: flex;
+margin-top: 10%;
+margin-left: 10%;
+align-items: center;
+}
+
+
+
+.popup {
+position: relative;
+display: inline-block;
+cursor: pointer;
+
+}
+
+/* Estilo do fundo (overlay) */
+.popup {
+position: fixed;
+/* Fixa o popup na tela */
+top: 0%;
+left: 0%;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.5);
+/* Fundo escuro com opacidade */
+display: none;
+/* Inicialmente oculto */
+justify-content: center;
+align-items: center;
+z-index: 1000;
+/* Garante que o popup fique sobre outros elementos */
+}
+
+/* Estilo do conteï¿½do do popup */
+.popup-content {
+background-color: white;
+padding: 20px;
+border-radius: 10px;
+width: 50%;
+max-width: 500px;
+/* Largura mï¿½xima do popup */
+position: relative;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+animation: fadeIn 0.3s ease-in-out;
+/* Animaï¿½ï¿½o de aparecimento */
+margin-top: 10%;
+margin-left: 38%
+}
+
+/* Animaï¿½ï¿½o de fade-in (desvanecimento suave) */
+@keyframes fadeIn {
+0% {
+opacity: 0;
+transform: scale(0.8);
+}
+
+100% {
+opacity: 1;
+transform: scale(1);
+}
+}
+
+/* Estilo do botï¿½o de fechar (X) */
+.popup-close {
+position: absolute;
+top: 10px;
+right: 10px;
+font-size: 40px;
+font-weight: bold;
+cursor: pointer;
+color: #FD914D;
+/* Cor do botï¿½o de fechar */
+}
+
+/* Estilo do formulï¿½rio dentro do popup */
+.popup-content form {
+display: flex;
+flex-direction: column;
+}
+
+.popup-content input[type="text"] {
+padding: 10px;
+margin: 10px 0;
+border: 1px solid #ccc;
+border-radius: 5px;
+font-size: 14px;
+margin-left: 25%;
+}
+
+.popup-content button[type="submit"] {
+padding: 10px;
+background-color: #FD914D;
+border: none;
+border-radius: 5px;
+font-size: 16px;
+color: white;
+cursor: pointer;
+margin-left: 35%;
+}
+
+.popup-content button[type="submit"]:hover {
+background-color: #e37e32;
+/* Alterar cor ao passar o mouse */
+}

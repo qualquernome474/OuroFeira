@@ -1,0 +1,103 @@
+/*cor de fundo das paginas*/
+body {
+  background: linear-gradient(90deg, #0097b2, #7ed957);
+}
+/*Possis o da logo*/
+.logocanto {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  font-size: 18px;
+}
+/*card do site*/
+.card {
+    background-color: #474747;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 350px;
+    overflow: hidden;
+}
+
+
+/*Configura  o da imagem dos cards*/
+.card-img {
+    width: 100%;
+    height: auto;
+    
+}
+/**/
+.card-content {
+    padding: 80px;
+}
+/*configura  o do titulo do card*/
+.card-title {
+    font-size: 16px;
+    margin-bottom: 16px;
+    color: #FD914D;
+    align-items: center;
+    
+}
+/*Descri  o do cards*/
+.card-description {
+    font-size: 16px;
+    color:#FD914D;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.card-description1, .card-description2, .card-description3 {
+  font-size: 16px;
+  color:#FD914D;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.card input[type="number"] {
+  width: 80%;
+  padding: 4px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+/*Button do cards*/
+.card-button {
+    background-color:#555;
+    color: #FD914D;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.6s ease;
+    border-color: #050505;
+  
+}
+
+/*cor de fundo dos Button*/
+.card-button:hover {
+    background-color: rgb(134, 236, 134);
+}
+/*deixa a barra de pesquisa centralizada junto com o button*/
+.centarlizaPesqiusa{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  max-width: 91.5%;
+}
+/*Barra de pesquisa*/
+.search-container {
+  max-width: 85px;
+  margin: 2%;
+  display: flex;
+  text-decoration: none;
+  transition: background-color 0.6s ease;
+  }
+.btnCanto2 {
+  position: absolute;
+  top: 7%;
+  left: 82%;
+  font-size: 18px;
+  display: flex;
+  gap: 8px;
+}
+
+
+
